@@ -1,1 +1,0 @@
-# linkai.practisracitse.github.io
