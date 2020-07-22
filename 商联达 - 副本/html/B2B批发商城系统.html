@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>B2B批发商城系统</title>
+		<style type="text/css">
+			*{
+				padding: 0px;
+				margin: 0px;
+			}			
+			body{
+				height: 5000px;
+				min-width: 1540px;
+			}			
+			li{
+				list-style: none;
+				cursor:pointer;
+			}
+			/*嘉成头部div*/
+			.jiacheng{
+				width: 100%;
+				height: 100px;
+				background-color: burlywood;
+			}
+			/*顶部第一蓝色图*/
+			.lk_lanse{
+				height: 350px;
+				background-size:contain;
+				background-position: center;
+				background-repeat:no-repeat;
+				background-image: url(../img/lk_pifa_0.png);
+			}
+			/*第二部分*/
+			.lk_jianjie1{
+				position: relative;
+				width: 1540px;
+				height: 750px;
+				text-align: center;
+				
+			}
+			.lk_jianjie1>h2{
+				position: absolute;
+				display: inline-block;
+				top: 12%;
+				left: 38%;
+			}
+			
+			.lk_jianjie1>p{
+				position: absolute;
+				display: inline-block;
+				width: 1000px;
+				top: 18%;
+				left: 19%;
+			}
+			.lk_jianjie1>img{
+				width: 1000px;
+				position: absolute;	
+				top: 31%;
+				left: 18%;
+			}
+			/*第三部分*/
+			.lk_shouji{
+				position: relative;
+				width: 1540px;
+				height: 550px;
+				text-align: center;
+				background-color: gray;
+				background-size:contain;
+				background-position: center;
+				background-repeat:no-repeat;
+				background-image:url(../img/lk_pifa_01.png) ;	
+			}
+			.lk_shouji>h2{
+				position: absolute;
+				display: inline-block;
+				top: 9%;
+				left: 43%;
+			}
+			
+			.lk_shouji>p{
+				position: absolute;
+				display: inline-block;
+				width: 1000px;
+				top: 18%;
+				left: 18%;
+			}
+			/*第四部分*/
+			.lk_fuzhuang{
+				position: relative;
+				width: 1540px;
+				height: 750px;
+				text-align: center;
+				
+			}
+			.lk_fuzhuang>h2{
+				position: absolute;
+				display: inline-block;
+				top: 12%;
+				left: 39%;
+			}
+			
+			.lk_fuzhuang>p{
+				position: absolute;
+				display: inline-block;
+				width: 1000px;
+				top: 18%;
+				left: 20%;
+			}
+			.lk_fuzhuang>img{
+				width: 1000px;
+				position: absolute;	
+				top: 31%;
+				left: 19%;
+			}
+			/*第五部分*/
+			.lk_dingdan{
+				position: relative;
+				width: 1540px;
+				height: 700px;
+				text-align: center;
+				background-color:rgba(240,240,240,1);
+				
+			}
+			.lk_dingdan>h2{
+				position: absolute;
+				display: inline-block;
+				top: 10%;
+				left: 43%;
+			}
+			
+			.lk_dingdan>p{
+				position: absolute;
+				display: inline-block;
+				width: 1000px;
+				top: 17%;
+				left: 18%;
+			}
+			.lk_dingdan>img{
+				width: 700px;
+				position: absolute;	
+				top: 29%;
+				left: 26%;
+				border-radius:10px ;
+			}
+			/*第五部分*/
+			.lk_qudao{
+				position: relative;
+				width: 1540px;
+				height: 720px;
+				text-align: center;
+				
+			}
+			.lk_qudao>h2{
+				position: absolute;
+				display: inline-block;
+				top: 10%;
+				left: 31%;
+			}
+			
+			.lk_qudao>p{
+				position: absolute;
+				display: inline-block;
+				width: 1050px;
+				top: 18%;
+				left: 18%;
+			}
+			.lk_qudao>img{
+				width: 500px;
+				position: absolute;	
+				top: 26%;
+				left: 33%;
+			}
+			/*第六部分ul*/
+			.lk_liangdian>h2{
+				text-align: center;
+				position: absolute;
+				top: 10%;
+				left:50%;
+				transform: translateX(-50%);
+			}
+			.lk_liangdian{
+				position: relative;
+				width: 1540px;
+				height: 700px;
+				text-align: center;
+				background-color:rgba(240,240,240,1);
+			}
+			.lk_liangdian>ul{
+				position: absolute;
+				width:960px;
+				height: 500px;
+				top: 20%;
+				text-align: center;
+				left:50%;
+				transform: translateX(-50%);
+			}
+			/*八个li*/
+			.lk_liangdian>ul>li{
+				width: 200px;
+				height: 200px;
+				float: left;
+				margin: 20px;
+				background-color: white;
+				
+			}
+			.lk_liangdian>ul>li:hover{
+				box-shadow: 0px 0px 10px ;
+			}
+			.lk_liangdian>ul>li>p{
+				font-size: 8px;
+				width: 150px;
+				margin: 0px auto;
+				margin-top: 10px;
+				text-align: left;
+			}
+			/*底部开始体验*/
+			.lk_tiyan{
+				width: 1540px;
+				height: 300px;
+				/*background-color:red;*/
+				position: relative;
+				background-image:url(../img/lk_caise111.png);
+			}
+			.lk_tiyan>ul{
+				width: 300px;
+				height: 80px;
+				text-align: center;
+				color: white;
+				border: 2px solid white;
+				font-size: 30px;
+				line-height: 80px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateX(-50%);
+				border-radius: 10px;
+				
+			}
+			
+			.lk_tiyan>p{
+				position: absolute;
+				top: 20%;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 500px;
+				height:40px;
+				text-align: center;
+				color: white;
+				font-size: 30px;
+				line-height: 40px;
+				transition: all 0.5s; 
+			}
+			.lk_tiyan>p:hover{
+				font-size: 35px;
+			}
+			/*页脚部分*/
+			.lk_foot{
+				width: 1540px;
+				height: 300px;
+				position: relative;
+				background-image: url(../img/foot.png);
+			}
+			.lk_foot>ul{
+				width: 700px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				position: absolute;
+				left: 32%;
+				color: white;		
+			}
+			.lk_foot>ul>li{
+				width: 19%;
+				margin: 0px 15px;
+				float: left;
+			}
+			.lk_foot>ul>li>ul{	
+				position: absolute;
+				top: 60px;
+				text-align: center;
+			}
+			.lk_foot>ul>li>ul>li{
+				color: gray;
+				height: 20px;
+				line-height: 20px;
+				font-size: 10px;
+				padding-left:35px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!--页眉-->
+		<div class="jiacheng"></div>
+		<!--顶部蓝色图-->
+		<div class="lk_lanse"></div>
+		<!--第二部分文章-->
+		<div class="lk_jianjie1">
+			<h2>商联达多用户批发商城系统简介</h2>
+			<p>商联达多用户批发商城系统是能同时支持在线批发、订货、零售、分销的电商平台系统，帮助企业快速高效启动网上批发订货生意和零售生意， 同时为企业提供商品、订单、会员、交易支付、物流配送等一体化管理，完美实现商家”分散经营、集中管理“。</p>
+			<img src="../img/11.png"/>
+		</div>
+		<!--第三部分-->
+		<div class="lk_shouji">
+			<h2>零售+批发+分销模式</h3>
+			<p>供货商在供货商后台能设置商品起批量、多级批发价格，支持零售商和普通消费者进行批发采购，轻松实现云端在线批发，同时支持零售商品和批发商品进行网络分销，一套系统解决您的批发难题，让天下没有难做的采购！</p>
+		</div>	
+		<!--第四部分-->
+		<div class="lk_fuzhuang">
+			<h2>不同需求客户可设置不同批发价格</h2>
+			<p>供货商后台可对每个批发商品设置不同数量的批发价格、起购量，采购商在前台进行批发采购，购买数量到达某一数量梯度，商品单价会有相应的阶梯变化。</p>
+			<img src="../img/lk_pifa_1.png"/>
+		</div>
+		<!--第五部分-->
+		<div class="lk_dingdan">
+			<h2>专属批发订货市场</h2>
+			<p>系统后台支持批发市场设置，所有能够批发的商品全部聚集于批发市场内，零售商或会员能够在批发市场内进行相应采购。</p>
+			<img src="../img/lk_pifa_2.png"/>
+		</div>
+		<!--第五部分-->
+		<div class="lk_qudao">
+			<h2>B2B商城系统招商入驻，发展供货商及零售商2大渠道</h2>
+			<p>可招商入驻，除了可以招纳零售商进行平台店铺扩充之外，还可以招纳供货批发商，为及零售商解决货源问题，让入驻的商家更快速的开店运行</p>
+			<img src="../img/lk_pifa_3.png"/>
+		</div>
+		<!--第六部分ul-->
+		<div class="lk_liangdian">
+			<h2>多用户批发商城系统特色亮点</h2>
+			<ul>
+				<li>
+					<img src="../img/lk_pifa_11.png"/>
+					<h5>零售、批发销售模式</h5>
+					<p>零售价和阶梯价两种销售模式，全方位 满足批发市场的需求</p>
+				</li>
+				<li>
+					<img src="../img/lk_pifa_12.png"/>
+					<h5>查看、购买权限可控</h5>
+					<p>后台可设置不同会员不同商家访问批发 市场购买的权限</p>
+				</li>
+				<li>
+					<img src="../img/lk_pifa_13.png"/>
+					<h5>可视化自定义装修</h5>
+					<p>丰富的装修模板，可视化页面编辑，既 操作简单灵活，又可直观看到装修效果</p>
+				</li>
+				<li>
+					<img src="../img/14.png"/>
+					<h5>拥有独立域名</h5>
+					<p>批发市场整合于商城平台之内，拥有独立 二级域名，可独立宣传</p>
+				</li>
+				<li>
+					<img src="../img/lk_pifa_15.png"/>
+					<h5>及时补充平台货源</h5>
+					<p>平台自营商品也会出现断货的情况，这 时候可以向有相关类目的批发商进行采 购，及时补充平台的货源</p>
+				</li>
+				<li>
+					<img src="../img/lk_pifa_16.png"/>
+					<h5>更广的盈利渠道</h5>
+					<p>批发采购频道，让平台又多了一条B2B的 销售体系，作为总平台可以从中获取相关 的利润，拥有更广的销售渠道</p>
+				</li>
+				<li>
+					<img src="../img/lk_pifa_17.png"/>
+					<h5>建立更多厂商合作关系</h5>
+					<p>通过批发采购平台，可以向更多线下的 厂家去发起合作，并邀请入驻，获取更 多的商家合作关系</p>
+				</li>
+				<li>
+					<img src="../img/18.png"/>
+					<h5>节约交易成本</h5>
+					<p>零售商在出现断货的情况，这时候可以 向有相关类目的批发商进行采购，及时 补充货源</p>
+				</li>
+				
+			</ul>
+		</div>
+		<!--开始体验文章位置-->
+		<div class="lk_tiyan">
+			<p>马上开启自己的电商之路</p>
+			<ul>
+				<li>开始体验</li>
+			</ul>
+		</div>
+		<!--页脚-->
+		<div class="lk_foot">
+			<ul>
+				<li>关于商联达
+					<ul>
+						<li>公司介绍</li>
+						<li>荣誉资质</li>
+						<li>联系我们</li>
+						<li>合作案例</li>
+						<li>公司新闻</li>
+					</ul>
+				</li>
+				<li>热门电商产品
+					<ul>
+						<li>多商户商城系统</li>
+						<li>同城O2O商城系统</li>
+						<li>B2B批发商城系统</li>
+						<li>电商收银系统</li>
+						<li>电商ERP系统</li>
+					</ul>
+				</li>
+				<li>电商解决方案
+					<ul>
+						<li>新零售解决方案</li>
+						<li>跨境电商解决方案</li>
+						<li>农村电商解决方案</li>
+						<li>区块链+电商解决方案</li>
+						<li>商业综合体解决方案</li>
+					</ul></li>
+				<li>电商学院
+					<ul>
+						<li>电商干货</li>
+						<li>行业快讯</li>
+						<li>新零售</li>
+						<li>B2B电商</li>
+						<li>B2B2C电商</li>
+					</ul></li>
+			</ul>
+		</div>
+	</body>
+</html>

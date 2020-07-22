@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>B2C自营商城系统</title>
+		<style type="text/css">
+			*{
+				padding:0px;
+				margin: 0px;
+			}
+			body{
+				min-width: 1540px;
+			}
+				li{
+				list-style: none;
+				cursor:pointer;
+			}
+			/*嘉成头部*/
+			.jiacheng{
+				height: 100px;
+				
+			}
+			/*第一头部*/
+			.lk_duli{
+				height: 350px;
+				background-size:contain;
+				background-position: center;
+				background-repeat:no-repeat;
+				background-image: url(../img/lk_3tp_123111.png);
+			}
+			/*版心左边*/
+			.lk_left1{
+				width: 10%;
+				/*background-color: gray;*/
+				height: 3500px;
+				float:left;
+				
+			}
+			
+			/*版心右边*/
+			.lk_right2{
+				width: 10%;
+				/*background-color: red;*/
+				height: 3500px;
+				float: right;
+			}
+			/*版心*/
+			.lk_contain{
+				width: 80%;
+				height: 3500px;
+				position:relative;
+				float:left;
+				/*background-color:red;*/
+			}
+			/*第二部分*/
+			.lk_lingshou1{
+				position: relative;
+				width: 100%;
+				height: 600px;
+				text-align: center;
+				/*background-color: gold;*/
+			}
+			.lk_lingshou1>h2{
+				position: absolute;
+				display: inline-block;
+				top: 12%;
+				left:50%;
+				transform: translateX(-50%);
+			}
+			
+			.lk_lingshou1>p{
+				position: absolute;
+				display: inline-block;
+				width: 1000px;
+				top: 18%;
+				left:50%;
+				transform: translateX(-50%);
+			}
+			.lk_lingshou1>img{
+				width: 1000px;
+				position: absolute;	
+				top: 35%;
+				left:50%;
+				transform: translateX(-50%);
+			}
+			/*第三部分*/
+			.lk_tongyi1{
+				height: 150px;
+				position: relative;
+					
+			}
+			.lk_tongyi1>h2{
+				left:50%;
+				top:20px;
+				transform: translateX(-50%);
+				position: absolute;	
+			}
+			.lk_tongyi1>p{
+				width: 1000px;
+				left:50%;
+				top:80px;
+				transform: translateX(-50%);
+				position: absolute;	
+			}
+			/*第三部分的透明波动图*/
+			.lk_da{
+				width: 100%;
+				height: 100px;
+				position: relative;
+				background-color:rgb(211,231,250);
+				border-radius: 50px;
+				overflow;hidden; 
+				margin: 0px auto;
+			}
+			.lk_divtouming{
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				border-radius: 50px;
+				opacity:0.3;
+				float: left;
+				background-color: dodgerblue;
+				margin: 0px auto;
+			}
+			.lk_div1{
+				width: 200px;
+				height: 100px;
+			}
+			.lk_div2{
+				width: 250px;
+				height: 100px;
+			}
+			.lk_div3{
+				width: 300px;
+				height: 100px;
+			}
+			.lk_div4{
+				width: 350px;
+				height: 100px;
+				transition: all 3s;
+				animation:mymove 3s infinite linear;
+			}
+			
+			.lk_div5{
+				width: 400px;
+				height: 100px;
+				transition: all 5s;
+				animation:mymove 5s infinite linear;
+			}
+			
+			.lk_div6{
+				width: 450px;
+				height: 100px;
+				transition: all 5s;
+				animation:mymove 5s infinite linear;
+			}
+			@keyframes mymove
+					{
+					from {opacity:0;}
+					to {opacity:0.3;}
+					}
+			.lk_div7{
+				position: absolute;
+				z-index: 10;
+				left: 45%;
+				transform: translateX(-50%);
+				top: 50%;
+				transform: translateY(-50%);
+				color: white;
+			}
+			.lk_div8{
+				position: absolute;
+				left: 5%;
+				top: 29%;
+				z-index: 10;
+				width: 130px;
+				font-size: 13px;
+			}
+			.lk_div9{
+				position: absolute;
+				right:5%;
+				z-index: 10;
+				top: 29%;
+				width: 130px;
+				font-size: 13px;
+			}
+			/*第四部分ulli*/
+			.lk_xuanxiangka{
+				position:relative;
+				width: 100%;
+			}
+			.lk_xuanxiangka>ul{
+				width: 100%;
+				position:absolute;
+				top: 20px;
+				
+			}
+			.lk_xuanxiangka>ul>li{
+				position:relative;
+				width: 23%;
+				height: 120px;
+				margin: 10px;
+				float: left;
+				color: white;
+				transition: all 1s;
+				box-shadow: 0px 0px 0px  black;
+				
+			}
+			.lk_xuanxiangka>ul>li:hover{
+				box-shadow: 0px 0px 10px  black;
+			}
+			.lk_xuanxiangka>ul>li>img{
+				position:absolute;
+				top: 33px;
+				left: 20px;
+			}
+			.lk_xuanxiangka>ul>li>h4{
+				position:absolute;
+				top: 23px;
+				left: 100px;
+			}
+			.lk_xuanxiangka>ul>li>p{
+				position:absolute;
+				font-size: 12px;
+				width: 167px;
+				top: 58px;
+				left: 100px;
+			}
+			
+			/*第四部分*/
+			.lk_suixin{
+				position: relative;
+				top: 350px;
+				width: 100%;
+				height: 600px;
+	
+				
+			}
+			.lk_suixin>h2{
+				position: absolute;
+				display: inline-block;
+				left: 50%;
+				top: 40px;
+				transform: translateX(-50%);
+			}
+			
+			.lk_suixin>p{
+				position: absolute;
+				display: inline-block;
+				width:80%;
+				left: 50%;
+				top: 90px;
+				text-align: center;
+				transform: translateX(-50%);
+			}
+			.lk_suixin>img{
+				width: 90%;
+				top: 180px;
+				position: absolute;	
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			/*第五部分粘性*/
+			.lk_nianxing{
+				width: 100%;
+				height: 500px;
+/*				background-color: red;*/
+				position: relative;
+				top: 400px;
+			}
+			.lk_nianxing>h2{
+				left: 50%;
+				transform: translateX(-50%);
+				position: absolute;
+			}
+			.lk_nianxing>p{
+				left: 50%;
+				top: 8%;
+				transform: translateX(-50%);
+				position: absolute;
+			}
+			/*12小图标的ul*/
+			.lk_nianxing>ul{
+				width: 100%;
+				height: 80%;
+				left: 50%;
+				top: 18%;
+				transform: translateX(-50%);
+				position: absolute;
+				/*border: 1px solid black;*/
+			}
+			.lk_nianxing>ul>li{
+				width: 31%;
+				height: 100px;
+				float: left;
+				position: relative;
+				margin: 10px;
+				transition: all 2s;
+
+				}
+			.lk_nianxing>ul>li:hover{
+				animation:rotate 1s infinite linear;
+				
+				}
+				@keyframes rotate{
+				0%{
+					transform: translate(0px,0px);
+				}
+				50%{
+					transform: translate(0px,-10px);
+				}
+				100%{
+					transform: translate(0px,0px);
+				}
+				}
+			.lk_nianxing>ul>li:hover>p{
+				color: red;
+			}
+			.lk_nianxing>ul>li:hover>h4{
+				color: red;
+			}
+			
+			.lk_nianxing>ul>li>img{
+				width: 78px;
+				position: absolute;
+				top: 10px;
+				left: 10px;
+			}
+			.lk_nianxing>ul>li>h4{
+				position: absolute;
+				top: 15px;
+				left: 100px;
+			}
+			
+			.lk_nianxing>ul>li>p{
+				position: absolute;
+				width: 250px;
+				top: 45px;
+				left: 100px;
+				font-size: 15px;
+				color: rgba(0,0,0,0.7);
+			}
+			
+			
+			/*实时概况文章部分*/
+			.lk_shishi1{
+				width: 100%;
+				/*background-color: red;*/
+				height: 600px;
+				position: relative;
+				text-align:center;
+				top: 500px;
+				
+			}
+			.lk_shishi1>h2{
+				margin: 0px auto;
+				height: 50px;
+				line-height: 50px;
+			}
+			.lk_shishi1>p{
+				width: 1200px;
+				margin: 0px auto;
+				color: gray;
+				size: 15px;
+			}
+			.lk_shishi1>ul{
+				width: 500px;
+				/*border: 1px solid black;*/
+				position: absolute;
+				bottom:150px;
+				right: 150px;
+			}
+			.lk_shishi1>ul>li{
+				height: 40px;
+				margin: 2%;
+				width: 20%;
+				float: left;
+				border: 1px solid white;
+				border-radius: 5px;
+				line-height: 40px;
+				color: gray;
+				background-color: gainsboro;
+				z-index: 20;
+				
+			}
+			/*8个li渐变颜色*/
+			.lk_shishi1>ul>li:hover{
+				background:linear-gradient(45deg,#8939A4,#3F63BA);
+				color: white;
+				border: 1px solid white;
+			}
+			/*8个轮播变换的div*/
+			.lk_shishi1>.lk_shishi1_lunbo{
+				position: absolute;
+				width: 100%;
+				height: 400px;
+				z-index: -20;
+				display: none;
+				/*margin: 500px;*/
+			}
+			/*变换标题与正文*/
+			.lk_shishi1>.lk_shishi1_lunbo>h4{
+				text-align: center;
+				top: 80px;
+				right: 400px;
+				position: absolute;
+				
+			}
+			.lk_shishi1>.lk_shishi1_lunbo>p{
+				width: 550px;
+				top: 110px;
+				font-size: 13px;
+				right: 130px;
+				text-align: center;
+				position: absolute;
+				color: gray;
+			
+			}
+			/*小电脑图片*/
+			.lk_shishi1>.lk_shishi1_lunbo>img{
+				width: 550px;
+				height: 350px;
+				top: 40px;
+				left:0px;
+				position: absolute;
+			}
+			
+			/*.lk_kongde{
+				width: 100%;
+				height: 500px;
+				position: relative;	
+			}*/
+			/*第七部分支付*/
+			.lk_zhifu{
+				margin-top: 500px;
+				width: 100%;
+				height: 400px;
+				/*background-color: pink;*/
+				position: relative;
+				top: 10px;
+				text-align: center;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			.lk_zhifu>p{
+				margin-top: 20px;
+				margin-bottom:30px ;
+			}
+			.lk_zhifu>ul>li{
+				margin:10px;
+				position: relative;
+				overflow: hidden;
+				width: 15%;
+				height: 250px;
+				float: left;
+				/*background-color: peru;*/
+				box-shadow: 0px 0px 10px;
+			}
+			.lk_zhifu>ul>li>img{
+				margin:30px auto;
+			}
+			.lk_zhifu>ul>li>h4{
+				margin:30px auto;
+			}
+			.lk_zhifu>ul>li>.lk_zhifu_div{
+				position: absolute;
+				width: 100%;
+				height: 100px;
+				background-color:rgb(48,186,255);
+				bottom: -100px;
+				transition: all 0.5s ; 
+				}
+			.lk_zhifu>ul>li:hover>.lk_zhifu_div{
+				bottom: 0px;
+			
+			}
+			.lk_zhifu>ul>li>.lk_zhifu_div>h5{
+				position: absolute;
+				width: 120px;
+				left: 50%;
+				top: 10%;
+				transform: translateX(-50%);
+			}
+			.lk_zhifu>ul>li>.lk_zhifu_div>p{
+				position: absolute;
+				font-size: 10px;
+				width: 120px;
+				left: 50%;
+				top: 40%;
+				transform: translateX(-50%);
+
+			}
+			
+				/*底部开始体验*/
+			.lk_tiyan{
+				width: 1540px;
+				height: 300px;
+				margin-top: 3500px;
+				/*background-color:red;*/
+				position: relative;
+				background-image:url(../img/lk_caise111.png);
+			}
+			.lk_tiyan>ul{
+				width: 300px;
+				height: 80px;
+				text-align: center;
+				color: white;
+				border: 2px solid white;
+				font-size: 30px;
+				line-height: 80px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateX(-50%);
+				border-radius: 10px;
+				
+			}
+			
+			.lk_tiyan>p{
+				position: absolute;
+				top: 20%;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 500px;
+				height:40px;
+				text-align: center;
+				color: white;
+				font-size: 30px;
+				line-height: 40px;
+				transition: all 0.5s; 
+			}
+			.lk_tiyan>p:hover{
+				font-size: 35px;
+			}
+			/*页脚部分*/
+			.lk_foot{
+				width: 1540px;
+				height: 300px;
+				position: relative;
+				background-image: url(../img/foot.png);
+			}
+			.lk_foot>ul{
+				width: 700px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				position: absolute;
+				left: 32%;
+				color: white;		
+			}
+			.lk_foot>ul>li{
+				width: 19%;
+				margin: 0px 15px;
+				float: left;
+			}
+			.lk_foot>ul>li>ul{	
+				position: absolute;
+				top: 60px;
+				text-align: center;
+			}
+			.lk_foot>ul>li>ul>li{
+				color: gray;
+				height: 20px;
+				line-height: 20px;
+				font-size: 10px;
+				padding-left:35px
+			}
+			.lk_foot>ul>li>ul>li:hover{
+				color: white;
+				text-decoration:underline
+			}
+		</style>
+	</head>
+	<body>
+		<div class="jiacheng"></div>
+		<!--头部-->
+		<div class="lk_duli"></div>
+		<!--版心左边-->
+		<div class="lk_left1">
+			<img class="lk_img1" src="../img/lk_3tp_zuo.png" alt="" />
+			<img class="lk_img2" src="../img/lk_3tp_zuo.png" alt="" />
+		</div>
+		
+		<!--版心右边-->
+		<div class="lk_right2">
+			<img class="lk_img3" src="../img/lk_3tp_you1.png" alt="" />
+			<img class="lk_img4" src="../img/lk_3tp_you1.png" alt="" />
+		</div>
+			
+		<!--版心-->
+		<div class="lk_contain">
+			<!--文章第一部分-->
+			<div class="lk_lingshou1">
+				<h2>B2C在线零售商城系统</h2>
+				<p>在线零售系统是商联达融合移动互联网时代电商特征，支持企业以消费者为核心，跟随顾客的节奏，建立领先的电子商务B2C零售平台，功能强大， 安全便捷，可承载千万级访问量，让企业低成本快速构建在线商城，开启电子商务业务，系统开源发售，可以根据公司业务需要，制定专门的业务 流程和各种功能模块，已成为大中型企业做电商的必选产品。</p>
+				<img src="../img/lk_3tp_31.png"/>				
+			</div>	
+			<!--第二部分-->
+			<div class="lk_tongyi1">
+					<h2>数据源统一，全网独立展现，真正实现一套系统全网覆盖</h2>
+					<p>商联达商城系统利用最新技术，完美打通各渠道，实现全终端数据同步，达到全网营销的效果，并将所有管理统一于一个管理平台</p>
+			</div>
+			<!--波纹动画-->
+			<div class="lk_da">
+				<div class="lk_div9"><p>线下付款，物流对接， 拥抱新零售</p></div>
+				<div class="lk_div8"><p>线上终端覆盖齐全， 数据无缝打通</p></div>
+				<div class="lk_div7"><p><h2>B2C系统</h2></p></div>
+				<div class="lk_div6 lk_divtouming"></div>
+				<div class="lk_div5 lk_divtouming"></div>
+				<div class="lk_div4 lk_divtouming"></div>
+				<div class="lk_div3 lk_divtouming"></div>
+				<div class="lk_div2 lk_divtouming"></div>
+				<div class="lk_div1  lk_divtouming "></div>	
+			</div>
+			<!--第三部分-->
+			<!--ulli部分-->
+			<div class="lk_xuanxiangka">
+				<ul>
+					<!--第一个li-->
+					<li style="background-color:rgb(22,216,145);">
+						<img src="../img/lk_3tp_w1.png"/>
+						<h4>微信小程序</h4>
+						<p>多用户商城小程序，快速抢占行业红利</p>
+					</li>
+					<!--第二个li-->
+					<li style="background-color:rgb(204,85,253);">
+						<img src="../img/lk_3tp_w2.png"/>
+						<h4>手机触屏商城</h4>
+						<p>采用最新HTML5技术，可在手机浏览器上直接购物</p>
+					</li>
+					<!--第三个li-->
+					<li style="background-color:rgb(255,175,36);">
+						<img src="../img/lk_3tp_w3.png"/>
+						<h4>O2O商城</h4>
+						<p>对接线下收银及门店硬件，构建线上线下流量闭环</p>
+					</li>
+					<!--第四个li-->
+					<li style="background-color:rgb(255,114,56);">
+						<img src="../img/lk_3tp_w4.png"/>
+						<h4>收银系统</h4>
+						<p>配备自主研发收银系统线上线下无缝衔接</p>
+					</li>
+					<!--第五个li-->
+					<li style="background-color:rgb(255,96,123);">
+						<img src="../img/lk_3tp_w5.png"/>
+						<h4>PC购物商城</h4>
+						<p>PC电脑端商城,完善购物体验及数据管理</p>
+					</li>
+					<!--第六个li-->
+					<li style="background-color:rgb(48,186,255);">
+						<img src="../img/lk_3tp_w6.png"/>
+						<h4>IOS / Android</h4>
+						<p>IOS/ Android双APP,聚拢用户购物更便捷</p>
+					</li>
+					<!--第七个li-->
+					<li style="background-color:rgb(118,217,30);">
+						<img src="../img/lk_3tp_w7.png"/>
+						<h4>微商城/微分销</h4>
+						<p>深度整合微信，借势传播,引爆社交流量</p>
+					</li>
+					<!--第八个li-->
+					<li style="background-color:rgb(120,123,253);">
+						<img src="../img/lk_3tp_w8.png"/>
+						<h4>第三方平台</h4>
+						<p>系统可对接企业自有京东，天猫等第三方平台，多渠道统一运营</p>
+					</li>		
+				</ul>
+			</div>
+			<!--第四部分-->
+			<div class="lk_suixin">
+				<h2>可视化自定义编辑商城模板，页面装修随心DIY！</h2>
+				<p>商联达商城系统采用先进的可视化模板设计方式，让首页、导航、楼层、广告位、专题、以及移动端可以根据自己 网站的需求随意变动装修；系统自带多套首页模板，为运营者个性化设计自己的商城提供了更多的选择。</p>
+				<img src="../img/lk_3tp_32.png"/>
+			</div>
+			
+			<!--第五部分粘性-->
+			<div class="lk_nianxing">
+				<h2>丰富的营销手段 增加用户黏性</h2>
+				<p>商联达商城系统内置的营销工具，能轻松帮您解决促销，吸粉，复购等营销分销难题</p>
+				<ul>
+					<!--第1个小图标-->
+					<li>
+						<img src="../img/lk_3tp-1.png"/>
+						<h4>优惠券</h4>
+						<p>派发优惠券、注册优惠券、活动优惠券</p>
+					</li>
+					<!--第2个小图标-->
+					<li>
+						<img src="../img/lk_3tp-2.png"/>
+						<h4>拼团</h4>
+						<p>可以设置多种团购折扣组合方式</p>
+					</li>
+					<!--第3个小图标-->
+					<li>
+						<img src="../img/lk_3tp-3.png"/>
+						<h4>团购</h4>
+						<p>限时团购，刺激会员下单购买</p>
+					</li>
+					<!--第4个小图标-->
+					<li>
+						<img src="../img/lk_3tp-4.png"/>
+						<h4>分销</h4>
+						<p>刺激老客带新客，会员化身分销员</p>
+					</li>
+					<!--第5个小图标-->
+					<li>
+						<img src="../img/lk_3tp-5.png"/>
+						<h4>限时折扣</h4>
+						<p>限定时间享受特定价格购买商品</p>
+					</li>
+					<!--第6个小图标-->
+					<li>
+						<img src="../img/lk_3tp-6.png"/>
+						<h4>满即送</h4>
+						<p>达到消费额度可赠送礼品，或者优惠券</p>
+					</li>
+					<!--第7个小图标-->
+					<li>
+						<img src="../img/lk_3tp-7.png"/>
+						<h4>优惠套装</h4>
+						<p>搭配成套商品进行销售既优惠又能节省会</p>
+					</li>
+					<!--第8个小图标-->
+					<li>
+						<img src="../img/lk_3tp-8.png"/>
+						<h4>产品组合</h4>
+						<p>多种商品组合在一起打折销售</p>
+					</li>
+					<!--第9个小图标-->
+					<li>
+						<img src="../img/lk_3tp-9.png"/>
+						<h4>移动专享</h4>
+						<p>移动端专享购物价格，吸引会员到手机端</p>
+					</li>
+					<!--第10个小图标-->
+					<li>
+						<img src="../img/lk_3tp-10.png"/>
+						<h4>积分兑换</h4>
+						<p>积分可兑换礼品也可抵扣现金购买商品</p>
+					</li>
+					<!--第11个小图标-->
+					<li>
+						<img src="../img/lk_3tp-11.png"/>
+						<h4>签到</h4>
+						<p>签到送积分，刺激会员活跃度</p>
+					</li>
+					<!--第12个小图标-->
+					<li>
+						<img src="../img/lk_3tp-12.png"/>
+						<h4>全民推手</h4>
+						<p>类似网易推手模式的分销模式，全民卖货</p>
+					</li>
+				</ul>
+			</div>
+			
+			<!--实时概况文章位置-->
+			<div class="lk_shishi1">
+				<h2></h2>
+				<h2>强大的数据分析能力，解决运营难题</h2>
+				<p>&nbsp;</p>
+				<p >全面了解商城经营数据，消费者行为数据，用于调整策略参考，更有实时交易数据监控，帮助你快速发现数据之间的联系及背后的价值，全面分析， 让你轻松把握商业趋势，及时应对变化。</p>
+				
+				<ul>
+					<li>实时概况</li>
+					<li>核心指标</li>
+					<li>流量分析</li>
+					<li>商品分析</li>
+					<li>交易构成</li>
+					<li>地域分析</li>
+					<li>渠道来源</li>
+					<li>终端构成</li>
+				</ul>
+				<!--第一张电脑图-->
+				<div class="lk_shishi1_lunbo" style="display: block;">
+					<img src="../img/lk_c1.png"/>
+					<h4>实时概况</h4>
+					<p>实时概况主要统计商城的实时销售额、销售单数、下单买家数、实时浏览量、PC/移动各自占比以及实时数据与昨天数据的对比等，方便运营方实时监控商城数据监控，做出经营决策。</p>
+				</div>
+				<!--第二张电脑图-->
+				<div class="lk_shishi1_lunbo">
+					<img src="../img/lk_c2.png"/>
+					<h4>核心指标</h4>
+					<p>核心指标主要是统计商城的各项核心数据，例如：各终端销售额、访客数、订单数、支付买家数、浏览量、商品访问量、商品销售排行、交易转化率、终端构成等各项数据。</p>
+				</div>
+	
+				<!--第三张电脑图-->
+				<div class="lk_shishi1_lunbo">
+					<img src="../img/lk_c3.png"/>
+					<h4>流量分析</h4>
+					<p>流量分析主要是统计商城各终端的流量访问及变化情况，例如：浏览量、人均浏览量、新老访客数、店铺/商品访问量、转化量等数据的变化情况。</p>
+				</div>
+				<!--第四张电脑图-->
+				<div class="lk_shishi1_lunbo">
+					<img src="../img/lk_c4.png"/>
+					<h4>商品分析</h4>
+					<p>商品分析主要是统计商城各终端的商品各项数据变化情况，例如：商品的平均停留时长、人均浏览量、商品收藏数、加购物车数、购买数、购买转化率、销售额/浏览量排行榜等数据。</p>
+				</div>
+				<!--第五张电脑图-->
+				<div class="lk_shishi1_lunbo">
+					<img src="../img/lk_c5.png"/>
+					<h4>交易构成</h4>
+					<p>交易构成主要是统计商城各终端的新老访客交易变化情况，例如：新老访客数变化量、客单价及变化量、转化率及变化量、支付金额及变化量等数据。</p>
+				</div>
+				<!--第六张电脑图-->
+				<div class="lk_shishi1_lunbo">
+					<img src="../img/lk_c6.png"/>
+					<h4>地域分析</h4>
+					<p>地域分析主要是统计商城各终端的分地域访客数及下单转化情况，例如：分地域访客占比排行榜、分地域下单买家排行榜、分地域下单转化率等数据。</p>
+				</div>
+				<!--第七张电脑图-->
+				<div class="lk_shishi1_lunbo">
+					<img src="../img/lk_c7.png"/>
+					<h4>渠道来源</h4>
+					<p>渠道来源主要是统计商城各终端的流量来源渠道情况，例如访客是通过搜索引擎推广过来的或者是通过其它方式过来的都可做一个唯一的标记，并分别统计各渠道来源的客户的浏览情况及转化情况等。</p>
+				</div>
+				<!--第八张电脑图-->
+				<div class="lk_shishi1_lunbo">
+					<img src="../img/lk_c8.png"/>
+					<h4>终端构成</h4>
+					<p>终端构成主要是统计商城流量及成交等的来源终端，例如：商城商品的PC浏览及购买情况、手机浏览及购买情况、PC和手机的各自转化率等情况。</p>
+				</div>		
+			</div>
+			<!--占位置的div-->
+			<div class="lk_kongde"></div>
+		
+			<div class="lk_zhifu">
+				<h2>支付与物流：满足顾客多种偏好</h2>
+				<p>运营商城 还需满足不同顾客的支付和配送需求</p>
+				<ul>
+					<li>
+						<img src="../img/lk_3tp-21.png" alt="" />
+						<h4>在线支付</h4>
+						<div class="lk_zhifu_div">
+							<h5>在线支付</h5>
+							<p>支持微信/支付宝/银联等 多种主流在线支付。</p>
+						</div>
+					</li>
+					<li>
+						<img src="../img/lk_3tp-22.png" alt="" />
+						<h4>预存款支付</h4>
+						<div class="lk_zhifu_div">
+							<h5>预存款支付</h5>
+							<p>系统支持会员余额预存款支付。</p>
+						</div>
+					</li>
+					<li>
+						<img src="../img/lk_3tp_23.png" alt="" />
+						<h4>上门自提</h4>
+						<div class="lk_zhifu_div">
+							<h5>上门自提</h5>
+							<p>线上下单门店或网点自提并核销。</p>
+						</div>
+					</li>
+					<li>
+						<img src="../img/lk_3tp_24.png" alt="" />
+						<h4>门店收银机</h4>
+						<div class="lk_zhifu_div">
+							<h5>门店收银机</h5>
+							<p>对接门店收银系统，打通线上线下数据门店收银机</p>
+						</div>
+					</li>
+					<li>
+						<img src="../img/lk_3tp_25.png" alt="" />
+						<h4>自定义快递模板</h4>
+						<div class="lk_zhifu_div">
+							<h5>自定义快递模板</h5>
+							<p>自定义快递、运费模板，更灵活更方便管理。</p>
+						</div>
+					</li>
+					<li>
+						<img src="../img/lk_3tp_26.png" alt="" />
+						<h4>添加物流公司</h4>
+						<div class="lk_zhifu_div">
+							<h5>添加物流公司</h5>
+							<p>添加提供快递多家物流公司，跟踪物流信息。</p>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+			
+		</div>
+		<!--开始体验文章位置-->
+		<div class="lk_tiyan">
+			<p>马上开启自己的电商之路</p>
+			<ul>
+				<li>开始体验</li>
+			</ul>
+		</div>
+		<!--页脚-->
+		<div class="lk_foot">
+			<ul>
+				<li>关于商联达
+					<ul>
+						<li>公司介绍</li>
+						<li>荣誉资质</li>
+						<li>联系我们</li>
+						<li>合作案例</li>
+						<li>公司新闻</li>
+					</ul>
+				</li>
+				<li>热门电商产品
+					<ul>
+						<li>多商户商城系统</li>
+						<li>同城O2O商城系统</li>
+						<li>B2B批发商城系统</li>
+						<li>电商收银系统</li>
+						<li>电商ERP系统</li>
+					</ul>
+				</li>
+				<li>电商解决方案
+					<ul>
+						<li>新零售解决方案</li>
+						<li>跨境电商解决方案</li>
+						<li>农村电商解决方案</li>
+						<li>区块链+电商解决方案</li>
+						<li>商业综合体解决方案</li>
+					</ul></li>
+				<li>电商学院
+					<ul>
+						<li>电商干货</li>
+						<li>行业快讯</li>
+						<li>新零售</li>
+						<li>B2B电商</li>
+						<li>B2B2C电商</li>
+					</ul></li>
+			</ul>
+		</div>
+		
+	</body>
+</html>
